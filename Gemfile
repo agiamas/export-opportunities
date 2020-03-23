@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.3'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.2.4.2'
 gem 'bundler', '1.16.1'
 gem 'puma', '3.8.0'
 gem 'pg', '0.21.0'
@@ -19,8 +19,8 @@ gem 'immutable-struct'
 gem 'nokogiri', '1.8.2'
 
 # Authentication & authorisation
-gem 'devise', '4.3.0'
-gem 'devise-async'
+gem 'devise', '4.4.2'
+gem 'devise-async', '>= 1.0.0'
 gem 'omniauth'
 gem 'omniauth-oauth2'
 gem 'pundit', require: true
@@ -32,7 +32,7 @@ gem 'sdoc'
 
 # Search
 gem 'pg_search'
-gem 'kaminari'
+gem 'kaminari', '>= 1.1.1'
 gem 'faraday_middleware-aws-signers-v4'
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
@@ -43,10 +43,10 @@ gem 'bourbon'
 gem 'neat', '1.8.0'
 gem 'autoprefixer-rails'
 gem 'normalize-scss'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.7'
 
 # Javascript
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.1'
 gem 'ckeditor'
 
 # Ruby tools
@@ -62,7 +62,7 @@ gem 'yajl-ruby', '>= 1.3.1'
 
 # Developer tools
 gem 'pry-rails'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.1'
 gem 'flipper'
 gem 'flipper-redis'
 gem 'flipper-ui'
@@ -92,7 +92,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.5.1'
   gem 'rubocop', '~> 0.49.0', require: false
   gem 'listen'
 end
@@ -107,12 +107,12 @@ group :test do
   gem 'timecop'
 
   gem 'webmock'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.7.2'
   gem 'rspec-collection_matchers'
   gem 'rspec_junit_formatter'
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.4.1'
   gem 'database_cleaner'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faker'
   gem 'launchy'
   gem 'poltergeist'
@@ -120,7 +120,7 @@ group :test do
   gem 'vcr'
   gem 'elasticsearch-extensions'
   gem 'show_me_the_cookies'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.2'
 end
 
 group :production do
