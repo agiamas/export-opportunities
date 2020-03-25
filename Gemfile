@@ -28,7 +28,7 @@ gem 'pundit', require: true
 # Rendering
 gem 'haml'
 gem 'jbuilder'
-gem 'sdoc'
+gem 'sdoc', '>= 1.0.0'
 
 # Search
 gem 'pg_search'
@@ -116,7 +116,7 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'poltergeist'
-  gem 'simplecov'
+  gem 'simplecov', '>= 0.15.1'
   gem 'vcr'
   gem 'elasticsearch-extensions'
   gem 'show_me_the_cookies'
