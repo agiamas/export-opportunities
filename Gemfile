@@ -4,7 +4,7 @@ ruby '2.4.3'
 
 gem 'rails', '5.1.4'
 gem 'bundler', '1.16.1'
-gem 'puma', '3.8.0'
+gem 'puma', '4.3.12'
 gem 'pg', '0.21.0'
 gem 'sidekiq'
 gem 'sidekiq-cron'
@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
 gem 'devise', '4.3.0'
