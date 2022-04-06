@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
 gem 'devise', '4.3.0'
@@ -58,7 +58,7 @@ gem 'hairtrigger'
 gem 'active_record_union'
 
 # Parsing JSON
-gem 'yajl-ruby', '>= 1.3.1'
+gem 'yajl-ruby', '>= 1.4.2'
 
 # Developer tools
 gem 'pry-rails'
