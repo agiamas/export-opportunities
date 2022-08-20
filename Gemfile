@@ -16,13 +16,13 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
 gem 'devise', '4.3.0'
 gem 'devise-async'
-gem 'omniauth'
-gem 'omniauth-oauth2'
+gem 'omniauth', '>= 2.0.0'
+gem 'omniauth-oauth2', '>= 1.7.1'
 gem 'pundit', require: true
 
 # Rendering
