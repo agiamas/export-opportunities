@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
 gem 'devise', '4.3.0'
@@ -43,7 +43,7 @@ gem 'bourbon'
 gem 'neat', '1.8.0'
 gem 'autoprefixer-rails'
 gem 'normalize-scss'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 
 # Javascript
 gem 'jquery-rails'
