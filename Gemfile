@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.3'
 
-gem 'rails', '5.1.4'
+gem 'rails', '6.1.7.1'
 gem 'bundler', '1.16.1'
 gem 'puma', '3.8.0'
 gem 'pg', '0.21.0'
@@ -16,10 +16,10 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
-gem 'devise', '4.3.0'
+gem 'devise', '4.7.0'
 gem 'devise-async'
 gem 'omniauth'
 gem 'omniauth-oauth2'
@@ -43,7 +43,7 @@ gem 'bourbon'
 gem 'neat', '1.8.0'
 gem 'autoprefixer-rails'
 gem 'normalize-scss'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 
 # Javascript
 gem 'jquery-rails'
@@ -62,11 +62,11 @@ gem 'yajl-ruby', '>= 1.3.1'
 
 # Developer tools
 gem 'pry-rails'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.3'
 gem 'flipper'
 gem 'flipper-redis'
 gem 'flipper-ui'
-gem 'paper_trail'
+gem 'paper_trail', '>= 10.3.1'
 
 # aws sdk for s3 storage of post-user communications
 gem 'aws-sdk'
@@ -120,7 +120,7 @@ group :test do
   gem 'vcr'
   gem 'elasticsearch-extensions'
   gem 'show_me_the_cookies'
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :production do
