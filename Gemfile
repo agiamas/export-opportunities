@@ -2,12 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.4.3'
 
-gem 'rails', '5.1.4'
+gem 'rails', '7.0.0'
 gem 'bundler', '1.16.1'
 gem 'puma', '3.8.0'
 gem 'pg', '0.21.0'
-gem 'sidekiq'
-gem 'sidekiq-cron'
+gem 'sidekiq', '>= 6.1.0'
+gem 'sidekiq-cron', '>= 2.0.0'
 gem 'sidekiq-failures'
 gem 'redis', '3.3.3'
 gem 'redis-namespace'
@@ -16,7 +16,7 @@ gem 'figaro'
 gem 'friendly_id'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
 gem 'devise', '4.3.0'
@@ -43,7 +43,7 @@ gem 'bourbon'
 gem 'neat', '1.8.0'
 gem 'autoprefixer-rails'
 gem 'normalize-scss'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 
 # Javascript
 gem 'jquery-rails'
@@ -98,7 +98,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', require: false
+  gem 'capybara', '>= 3.40.0', require: false
   gem 'capybara-email', require: false
   gem 'capybara-screenshot'
   gem 'fuubar'
@@ -110,7 +110,7 @@ group :test do
   gem 'rspec-rails'
   gem 'rspec-collection_matchers'
   gem 'rspec_junit_formatter'
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 3.0.0'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
