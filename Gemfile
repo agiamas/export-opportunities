@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.3'
 
-gem 'rails', '5.1.4'
+gem 'rails', '7.1.5.2'
 gem 'bundler', '1.16.1'
 gem 'puma', '3.8.0'
 gem 'pg', '0.21.0'
@@ -13,13 +13,13 @@ gem 'redis', '3.3.3'
 gem 'redis-namespace'
 gem 'faraday'
 gem 'figaro'
-gem 'friendly_id'
+gem 'friendly_id', '>= 5.2.4'
 gem 'immutable-struct'
 
-gem 'nokogiri', '1.8.2'
+gem 'nokogiri', '1.8.3'
 
 # Authentication & authorisation
-gem 'devise', '4.3.0'
+gem 'devise', '4.4.0'
 gem 'devise-async'
 gem 'omniauth'
 gem 'omniauth-oauth2'
@@ -31,8 +31,8 @@ gem 'jbuilder'
 gem 'sdoc'
 
 # Search
-gem 'pg_search'
-gem 'kaminari'
+gem 'pg_search', '>= 2.1.3'
+gem 'kaminari', '>= 1.2.0'
 gem 'faraday_middleware-aws-signers-v4'
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
@@ -43,10 +43,10 @@ gem 'bourbon'
 gem 'neat', '1.8.0'
 gem 'autoprefixer-rails'
 gem 'normalize-scss'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 
 # Javascript
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 gem 'ckeditor'
 
 # Ruby tools
@@ -54,7 +54,7 @@ gem 'stringex', require: false
 gem 'addressable'
 
 # ActiveRecord tools
-gem 'hairtrigger'
+gem 'hairtrigger', '>= 0.2.21'
 gem 'active_record_union'
 
 # Parsing JSON
@@ -62,11 +62,11 @@ gem 'yajl-ruby', '>= 1.3.1'
 
 # Developer tools
 gem 'pry-rails'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.2'
 gem 'flipper'
 gem 'flipper-redis'
 gem 'flipper-ui'
-gem 'paper_trail'
+gem 'paper_trail', '>= 10.3.1'
 
 # aws sdk for s3 storage of post-user communications
 gem 'aws-sdk'
@@ -92,35 +92,35 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.6.0'
   gem 'rubocop', '~> 0.49.0', require: false
   gem 'listen'
 end
 
 group :test do
-  gem 'capybara', require: false
-  gem 'capybara-email', require: false
-  gem 'capybara-screenshot'
+  gem 'capybara', '>= 2.18.0', require: false
+  gem 'capybara-email', '>= 3.0.1', require: false
+  gem 'capybara-screenshot', '>= 1.0.19'
   gem 'fuubar'
   gem 'shoulda-matchers', require: false
   gem 'rspec-sidekiq'
   gem 'timecop'
 
   gem 'webmock'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.8.0'
   gem 'rspec-collection_matchers'
   gem 'rspec_junit_formatter'
-  gem 'pundit-matchers'
+  gem 'pundit-matchers', '>= 1.5.0'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'launchy'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.18.0'
   gem 'simplecov'
   gem 'vcr'
   gem 'elasticsearch-extensions'
-  gem 'show_me_the_cookies'
-  gem 'rails-controller-testing'
+  gem 'show_me_the_cookies', '>= 4.0.0'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :production do
